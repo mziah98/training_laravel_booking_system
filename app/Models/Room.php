@@ -15,7 +15,7 @@ class Room extends Model
 
     protected $fillable = [
         'name',
-        'capacity'
+        'capacity',
         'status',
     ];
 
