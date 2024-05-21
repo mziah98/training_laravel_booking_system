@@ -38,7 +38,6 @@ Route::group(['prefix' => '/app', 'as' => 'app.', 'middleware' => ['auth']], fun
     Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'dashboard'])->name('dashboard');
     Route::resource('booking', 'App\Http\Controllers\User\BookingController');
     //user history
-
     //user profile
 
     Route::group(['prefix' => '/admin', 'as' => 'admin.', 'middleware' => ['check_admin']], function(){ 
